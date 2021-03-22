@@ -1,0 +1,13 @@
+{% extends 'base.html '%}
+
+{% block content %}
+   {% for juegos in carpeta %}
+<div class="detalle-entry">
+    <h2> <a href="{% url 'archivo' juegos.pk %}">  {{ juegos.juego }} </a></h2>
+                       <p>{{juegos.Descripcion}}</p>
+</div>
+
+     <img src= {{ deta.fotos }}  style="width: 200px;height: 200px;">
+    {% endfor %}
+{% endblock content %}
+

@@ -1,0 +1,17 @@
+body{
+    font-size: 20px;
+}
+
+head h1 a{
+    color: aqua;
+    text-decoration: none;
+}
+
+.detlalle-entry{
+    margin-bottom: 2rem;
+}
+
+.detlalle-entry h2 a,
+.detlalle-entry h2 a:visited{
+    color: brown;
+}

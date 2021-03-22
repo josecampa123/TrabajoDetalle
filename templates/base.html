@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Juegos infantiles </title>
+
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <div>
+        <h1> <a href="{% url 'home' %}">Juegos Infantiles</a></h1>
+    </div>
+    <div>
+        <a href="{% url 'notaNueva' %}">  Agregar nota nueva </a>
+    </div>
+    
+
+</head>
+<body>
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+    
+</body>
+</html>
